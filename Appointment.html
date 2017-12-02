@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Schedule Appointment</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="Styling.css" />
+</head>
+<body>
+
+	<header id="header"><p>Dental Associates</p></header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+				<h2 id = "decider">Appointments</h2>
+			</article>	
+
+		<select id='mySelector'>
+			<option value="">Select what you want to search</option>
+			<option value='0'>ApptID</option>
+			<option value='1'>ApptDate</option>
+			<option value='2'>ApptTime</option>
+			<option value='3'>TxName</option>
+			<option value='4'>PtNum</option>
+		</select>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the table...">
+		<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
+
+			<script src="JavaJSON.js"></script>
+			
+        </form>		
+		</main>
+
+		<nav id="left" class="column">
+			<h3>Options</h3>
+			<ul>
+				<li><a href="Main_Page.html">Main Page</a></li>
+				<li><a href="Patient.html">Patients</a></li>
+				<li><a href="Employee.html">Employees</a></li>
+				<li><a href="Appointment.html">Appointments</a></li>
+				<li><a href="Payment_Info.html">Payment Information</a></li>
+			</ul>
+		</nav>
+
+		<div id="right" class="column">
+
+			<a href="Update_Appointment.html"><button>Update <br> Appointment</button></a>
+			<a href="Schedule_Appointment.html"><button>Schedule <br> Appointment</button></a>
+			<a href="Cancel_Appointment.html"><button>Cancel <br> Appointment</button></a>
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<p><em>Copyright &copy; 2017 Dental Associates</em></p>
+	</div>
+
+</body>
+
+</html>

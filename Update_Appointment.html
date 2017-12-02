@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Update Appointment</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="Styling.css" />
+</head>
+<body>
+
+	<header id="header"><p>Dental Associates</p></header>
+
+	<div id="container">
+	
+	
+		<main id="center" class="column">
+			<article>
+				<h2 id = "decider">Appointments</h2>
+				<h3>Update a Appointment<h3>
+			</article>		
+			
+			
+			<h4>Input ID of field you want to change</h4>
+			<input type="text" id="updateID" placeholder="Input ID"></input>
+			<h4>Input values you want to change</h4>
+			
+		
+			<label>Appointment Date:</label> <input type="text" id="apptID"> <br>
+            <label>Appointment Time:</label> <input type="text" id="apptTime"> <br>
+			<label>TxName:</label> <input type="text" id="txName"> <br>
+			<label>Patient Number:</label> <input type="text" id="PtNum"> <br>
+		
+			
+			<button id="beginUpdate" onclick="updateFunction()">Confirm</button>
+			
+			<script>
+			function updateFunction()
+			{
+				var id = updateID.value;
+				var x = document.getElementById("myTable").rows[id].cells;
+				
+				x[1].innerHTML = document.getElementById("apptID").value;
+				x[2].innerHTML = document.getElementById("apptTime").value;
+				x[3].innerHTML = document.getElementById("txName").value;
+				x[4].innerHTML = document.getElementById("PtNum").value;
+			}
+			</script>
+		
+		
+			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
+
+			<script src="JavaJSON.js"></script>
+			
+			
+			
+			<script>
+			var header = document.getElementById("myTable").rows[0].cells;
+			header[0].innerHTML = "Appointment ID";
+			header[1].innerHTML = "Appointment Date";
+			header[2].innerHTML = "Appointment Time";
+			header[4].innerHTML = "Patient Number";
+			</script>
+			
+			
+		</main>
+
+		<nav id="left" class="column">
+			<h3>Options</h3>
+			<ul>
+				<li><a href="Main_Page.html">Main Page</a></li>
+				<li><a href="Patient.html">Patients</a></li>
+				<li><a href="Employee.html">Employees</a></li>
+				<li><a href="Appointment.html">Appointments</a></li>
+				<li><a href="Payment_Info.html">Payment Information</a></li>
+			</ul>
+		</nav>
+
+		<div id="right" class="column">
+			
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<p><em>Copyright &copy; 2017 Dental Associates</em></p>
+	</div>
+
+</body>
+</html>
