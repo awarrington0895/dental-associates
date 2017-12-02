@@ -7,29 +7,32 @@
 			}
 		else if (document.getElementById("decider").innerHTML == "Appointments")
 		{
-		// var myTable =[
-        //     {
-        //         "ApptID": "1",
-        //         "ApptDate": "November 28, 2017",
-        //         "ApptTime": "9:30AM",
-        //         "TxName": "Jackie",
-		// 		"PtNum": "2"
-        //     },
-        //     {
-        //         "ApptID": "2",
-        //         "ApptDate": "November 29, 2017",
-        //         "ApptTime": "10:30AM",
-        //         "TxName": "Joe",
-		// 		"PtNum": "3"
-        //     },
-        //     {
-        //          "ApptID": "3",
-        //         "ApptDate": "November 30, 2017",
-        //         "ApptTime": "8:30AM",
-        //         "TxName": "Jessie",
-		// 		"PtNum": "4"
-        //     }
-		// 	]
+		var myTable =[
+            {
+                "ApptID": "1",
+                "ApptDate": "November 28, 2017",
+                "ApptTime": "9:30AM",
+                "TxName": "Jackie",
+				"PtNum": "2"
+            },
+            {
+                "ApptID": "2",
+                "ApptDate": "November 29, 2017",
+                "ApptTime": "10:30AM",
+                "TxName": "Joe",
+				"PtNum": "3"
+            },
+            {
+                 "ApptID": "3",
+                "ApptDate": "November 30, 2017",
+                "ApptTime": "8:30AM",
+                "TxName": "Jessie",
+				"PtNum": "4"
+            }
+        	]
+        
+
+
 		}
 		
 		else if (document.getElementById("decider").innerHTML == "Employees")
