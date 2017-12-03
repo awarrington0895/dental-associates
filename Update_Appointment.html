@@ -28,21 +28,7 @@
 			<label>Treatment Name: </label> <label id = "div1"></label><br>
 			<label>Patient Number: </label> <input type = "text" id ="Ptnum"><br>
 			
-			<button onclick="commitUpdate()">Update Appointment</button>
-			
-			<script>
-			function updateFunction()
-			{
-				var id = updateID.value;
-				var x = document.getElementById("myTable").rows[id].cells;
-				
-				x[1].innerHTML = document.getElementById("apptID").value;
-				x[2].innerHTML = document.getElementById("apptTime").value;
-				x[3].innerHTML = document.getElementById("txName").value;
-				x[4].innerHTML = document.getElementById("PtNum").value;
-			}
-			</script>
-		
+			<button onclick="check()">Update Appointment</button>
 		
 			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
 			<script src="JavaJSON.js"></script>

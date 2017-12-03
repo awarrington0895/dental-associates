@@ -1,5 +1,6 @@
 var treatmentAPI = "http://dental/api/treatments";
 var treatmentDrop = document.createElement("select");
+treatmentDrop.setAttribute("id", "dropDownMenu"); 
 var options = document.createElement('option');
 
 options.innerHTML = "Select what Treatment you want";
