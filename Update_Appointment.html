@@ -5,7 +5,7 @@
    <title>Update Appointment</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" href="Styling.css" />
-
+	
 </head>
 <body>
 
@@ -27,6 +27,8 @@
 			<label>Appointment Time: </label> <input type = "text" id ="appTime"><br>
 			<label>Treatment Name: </label> <label id = "div1"></label><br>
 			<label>Patient Number: </label> <input type = "text" id ="Ptnum"><br>
+			
+			<button onclick="commitUpdate()">Update Appointment</button>
 			
 			<script>
 			function updateFunction()
@@ -78,6 +80,6 @@
 	</div>
 	
    <script src="TreatmentDropDown.js"></script>
-   		
+   <script src="AppointmentUpdate.js"></script>
 </body>
 </html>
