@@ -5,6 +5,7 @@
    <title>Update Appointment</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" href="Styling.css" />
+
 </head>
 <body>
 
@@ -14,24 +15,18 @@
 	
 	
 		<main id="center" class="column">
-			<article>
+
 				<h2 id = "decider">Appointments</h2>
 				<h3>Update a Appointment<h3>
-			</article>		
+					
+			<h4><b>Select ID of employee you want to update</b></h4>
+			<label>Appointment ID: </label><input type = "text" id ="appid"><br>
 			
-			
-			<h4>Input ID of field you want to change</h4>
-			<input type="text" id="updateID" placeholder="Input ID"></input>
-			<h4>Input values you want to change</h4>
-			
-		
-			<label>Appointment Date:</label> <input type="text" id="apptID"> <br>
-            <label>Appointment Time:</label> <input type="text" id="apptTime"> <br>
-			<label>TxName:</label> <input type="text" id="txName"> <br>
-			<label>Patient Number:</label> <input type="text" id="PtNum"> <br>
-		
-			
-			<button id="beginUpdate" onclick="updateFunction()">Confirm</button>
+			<h4><b>Select values you want to change</b></h4>
+			<label>Appointment Date: </label> <input type = "text" id ="appDate"><br>
+			<label>Appointment Time: </label> <input type = "text" id ="appTime"><br>
+			<label>Treatment Name: </label> <label id = "div1"></label><br>
+			<label>Patient Number: </label> <input type = "text" id ="Ptnum"><br>
 			
 			<script>
 			function updateFunction()
@@ -48,10 +43,7 @@
 		
 		
 			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
-
 			<script src="JavaJSON.js"></script>
-			
-			
 			
 			<script>
 			var header = document.getElementById("myTable").rows[0].cells;
@@ -84,6 +76,8 @@
 	<div id="footer-wrapper">
 		<p><em>Copyright &copy; 2017 Dental Associates</em></p>
 	</div>
-
+	
+   <script src="TreatmentDropDown.js"></script>
+   		
 </body>
 </html>
