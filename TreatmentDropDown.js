@@ -13,16 +13,15 @@ document.getElementById("div1").appendChild(treatmentDrop);
 
 
 	fetch(treatmentAPI)
-				.then((response) => response.json())
-				.then(function(data) {
+	.then((response) => response.json())
+	.then(function(data) {
 					
-                for(var i = 0; i < data.length; i++)
-				{
-				var option = document.createElement('option');
-				option.innerHTML = data[i].TxName;
-				option.setAttribute("value", '"' + i + '"');
-				treatmentDrop.appendChild(option);
-				}
-
-				})			
+        for(var i = 0; i < data.length; i++)
+		{
+		var option = document.createElement('option');
+		option.innerHTML = data[i].TxName;
+		option.setAttribute("value", '"' + i + '"');
+		treatmentDrop.appendChild(option);
+		}
+		})			
 
