@@ -9,7 +9,7 @@ function commitUpdate() {
   	var updateObject = {
 		appt_date: appDate.value, 
 		appt_time: appTime.value,
-		tx_name: e.options[e.selectedIndex].text,
+		tx_name: "Culture-lower urinary",
 		pt_num: Ptnum.value
 		};		
 	
@@ -19,6 +19,8 @@ function commitUpdate() {
 			headers: new Headers() 
 			};
 					
+		JSON.stringify(fetchData);
+		
 		fetch(updateRow, fetchData)
 		.then((response) => response.text())
 		.then(function(data) {

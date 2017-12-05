@@ -18,26 +18,27 @@
 				<h3>Update a Patient</h3>
 			</article>	
 
-			<select id='mySelector'>
-			<option value="">Select what you want to search</option>
-			<option value='0'>PtNum</option>
-			<option value='1'>FirstName</option>
-			<option value='2'>LastName</option>
-			<option value='3'>PreferredName</option>
-			<option value='4'>Address</option>
-			<option value='5'>City</option>
-			<option value='6'>State</option>
-			<option value='7'>Zip</option>
-			<option value='8'>PrimPhone</option>
-			<option value='9'>SecPhone</option>
-			<option value='10'>Email</option>
-			<option value='11'>Allergies</option>
-			<option value='12'>InsName</option>
-			<option value='13'>InsNumber</option>
-			
-		</select>
+				<form action="UpdatePatient.php" method="post">
+				<h4><b>Insert Number of Patient you want to Update</b></h4>
+				<label>Patient Number: </label><input type = "text" name ="PNum"><br>
+				<h4><b>Select values you want to Update</b></h4>
+				<label>First Name: </label> <input type = "text" name ="FirsName">
+				<label>Last Name: </label> <input type = "text" name ="LasName">
+				<label>Preferred Name: </label> <input type = "text" name ="PreferName"><br>
+				<label>Address: <input type = "text" name ="Addres">
+				<label>City: <input type = "text" name ="Cit">
+				<label>State: <input type = "text" name ="Stat"><br>
+				<label>Zip: <input type = "text" name ="Zi">
+				<label>Primary Phone: <input type = "text" name ="PriPhone">
+				<label>Secondary Phone: <input type = "text" name ="SePhone"><br>
+				<label>Email: <input type = "text" name ="Emai">
+				<label>Allergies: <input type = "text" name ="Allergie">
+				<label>Insurance Name: <input type = "text" name ="InName"><br>
+				<label>Insurance Number: <input type = "text" name ="InNumber"><br>
+				<input type="submit" name="sub" value="Update">
+				</form>
 		
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the table...">
+
 			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
 
 			<script src="JavaJSON.js"></script>			
@@ -51,7 +52,6 @@
 				<li><a href="Patient.html">Patients</a></li>
 				<li><a href="Employee.html">Employees</a></li>
 				<li><a href="Appointment.html">Appointments</a></li>
-				<li><a href="Payment_Info.html">Payment Information</a></li>
 			</ul>
 		</nav>
 

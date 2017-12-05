@@ -13,27 +13,27 @@
 
 	<div id="container">
 	
-	
 		<main id="center" class="column">
-
+			<article>
 				<h2 id = "decider">Appointments</h2>
 				<h3>Update a Appointment<h3>
+			</article>
+				<form action="updateAppointment.php" method="post">
+				<h4>Select ID of appointment you want to update</h4>
+				<label>Appointment ID: </label><input type = "text" name ="AppID"><br>
+				<h4><b>Select values you want to change</b></h4>
+				<label>Appointment Date: </label> <input type = "text" name ="AppDate"><br>
+				<label>Appointment Time: </label> <input type = "text" name ="AppTime"><br>
+				<label>Treatment Name: <input type = "text" name ="TName"><br>
+
+				<label>Patient Number: </label> <input type = "text" name ="PNum"><br>
+				<input type="submit" name="sub" value="Update">
+				</form>
 					
-			<h4><b>Select ID of employee you want to update</b></h4>
-			<label>Appointment ID: </label><input type = "text" id ="appid"><br>
-			
-			<h4><b>Select values you want to change</b></h4>
-			<label>Appointment Date: </label> <input type = "text" id ="appDate"><br>
-			<label>Appointment Time: </label> <input type = "text" id ="appTime"><br>
-			<label>Treatment Name: </label> <label id = "div1"></label><br>
-			<label>Patient Number: </label> <input type = "text" id ="Ptnum"><br>
-			
-			<button onclick="commitUpdate()">Update Appointment</button>
-		
 			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
 			<script src="JavaJSON.js"></script>
 			
-			<!--
+			
 			<script>
 			var header = document.getElementById("myTable").rows[0].cells;
 			header[0].innerHTML = "Appointment ID";
@@ -41,7 +41,7 @@
 			header[2].innerHTML = "Appointment Time";
 			header[4].innerHTML = "Patient Number";
 			</script>
-			-->
+			
 			
 		</main>
 
@@ -52,7 +52,6 @@
 				<li><a href="Patient.html">Patients</a></li>
 				<li><a href="Employee.html">Employees</a></li>
 				<li><a href="Appointment.html">Appointments</a></li>
-				<li><a href="Payment_Info.html">Payment Information</a></li>
 			</ul>
 		</nav>
 
