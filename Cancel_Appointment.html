@@ -5,6 +5,8 @@
    <title>Cancel Appointment</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" href="Styling.css" />
+   <script src="post-functions.js"></script>
+   <script src="submit-handler.js"></script>
 </head>
 <body>
 
@@ -15,8 +17,23 @@
 		<main id="center" class="column">
 			<article>
 				<h2 id = "decider">Appointments</h2>
-				<h3>Cancel a Appointment<h3>
-			</article>		
+				<h3>Cancel an Appointment<h3>
+			</article>
+			
+
+		<script>
+			// Calls deleteEntry function from post-functions.js
+			// to submit DELETE request to http://dental/api/appointment/delete/{id}
+			function deleteOnSubmit() {
+				var id = document.getElementById("deleteID").value;
+				deleteEntry("appointment", id);
+			}
+		</script>
+		Which appointment do you want to delete? 
+		<input type="text" name="delete" id="deleteID">
+		<button onclick="deleteOnSubmit()">Submit</button>
+		<br/>
+		
 	
 		<select id='mySelector'>
 			<option value="">Select what you want to search</option>
@@ -30,7 +47,11 @@
 			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the table...">
 			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
 
+			
+
 			<script src="JavaJSON.js"></script>
+
+			
 		</main>
 
 		<nav id="left" class="column">
@@ -52,5 +73,6 @@
 		<p><em>Copyright &copy; 2017 Dental Associates</em></p>
 	</div>
 
+	
 </body>
 </html>
