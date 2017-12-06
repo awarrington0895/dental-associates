@@ -18,16 +18,19 @@
 				<h3>Schedule a Appointment<h3>
 			</article>		
 	
-		<select id='mySelector'>
-			<option value="">Select what you want to search</option>
-			<option value='0'>ApptID</option>
-			<option value='1'>ApptDate</option>
-			<option value='2'>ApptTime</option>
-			<option value='3'>TxName</option>
-			<option value='4'>PtNum</option>
-		</select>
+			<form action="ScheduleAppointment.php" method="post">
+				<h4><b>Insert ID of Appointment you want to Schedule</b></h4>
+				<label>Appointment ID: </label><input type = "text" name ="AppID"><br>
+				<h4><b>Input the values for the appointment</b></h4>
+				<label>Appointment Date: </label> <input type = "text" name ="AppDate"><br>
+				<label>Appointment Time: </label> <input type = "text" name ="AppTime"><br>
+				<label>Treatment Name: <input type = "text" name ="TName"><br>
+				<!--</label> <label id = "div1"></label><br>-->
+				<label>Patient Number: </label> <input type = "text" name ="PNum"><br>
+				<input type="submit" name="sub" value="Schedule">
+				</form>
 		
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the table...">
+			<!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the table...">-->
 			<div id = "showData" style="width:100%; height:500px; overflow:auto;"></div>
 
 			<script src="JavaJSON.js"></script>
@@ -40,7 +43,6 @@
 				<li><a href="Patient.html">Patients</a></li>
 				<li><a href="Employee.html">Employees</a></li>
 				<li><a href="Appointment.html">Appointments</a></li>
-				<li><a href="Payment_Info.html">Payment Information</a></li>
 			</ul>
 		</nav>
 
